@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo fictício de alimentos com filtro por setor e seleção rápida para compor uma pequena cesta.">
+    <title>
+      Banca da Estação
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Banca
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Banca da Estação
+        </h1>
+        <p class="introducao">
+          Catálogo fictício de alimentos com filtro por setor e seleção rápida para compor uma pequena cesta.
+        </p>
+      </section>
+      <section class="painel">
+        <label for="setor">
+          <strong>
+            Setor
+          </strong>
+        </label>
+        <select id="setor">
+          <option value="Todos">
+            Todos
+          </option>
+          <option>
+            Frutas
+          </option>
+          <option>
+            Bebidas
+          </option>
+          <option>
+            Cuidados
+          </option>
+        </select>
+      </section>
+      <section id="produtos" class="grade" aria-live="polite">
+      </section>
+      <section class="painel">
+        <h2>
+          Cesta da semana
+        </h2>
+        <p id="cesta">
+          Nenhum item selecionado.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
